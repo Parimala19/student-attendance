@@ -109,7 +109,17 @@ Open Streamlit dashboard (http://localhost:8501)
 
 ---
 
-## Quick Start
+## New Developer? Start Here
+
+If you are setting up this project for the first time, read the full step-by-step guide:
+
+**[DEVELOPER_SETUP.md](./DEVELOPER_SETUP.md)** — covers every tool you need to install,
+how to start the backend, how to build the Android app, and how to run the full end-to-end
+test. Written for someone new to the project.
+
+---
+
+## Quick Start (experienced developers)
 
 ### Prerequisites
 - Docker & Docker Compose
