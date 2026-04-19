@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- Face circle outline -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M54,28 C39.64,28 28,39.64 28,54 C28,68.36 39.64,80 54,80 C68.36,80 80,68.36 80,54 C80,39.64 68.36,28 54,28Z M54,34 C65.03,34 74,42.97 74,54 C74,65.03 65.03,74 54,74 C42.97,74 34,65.03 34,54 C34,42.97 42.97,34 54,34Z"/>
+    <!-- Eyes -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M44,50 C44,47.79 45.79,46 48,46 C50.21,46 52,47.79 52,50 C52,52.21 50.21,54 48,54 C45.79,54 44,52.21 44,50Z"/>
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M56,50 C56,47.79 57.79,46 60,46 C62.21,46 64,47.79 64,50 C64,52.21 62.21,54 60,54 C57.79,54 56,52.21 56,50Z"/>
+    <!-- Smile -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="2"
+        android:pathData="M44,60 Q54,68 64,60"
+        android:fillType="nonZero"/>
+</vector>

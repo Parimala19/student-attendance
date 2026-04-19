@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Attendance App</string>
+    <string name="login_title">Student Attendance</string>
+    <string name="login_subtitle">Sign in to mark your attendance</string>
+    <string name="email_label">Email</string>
+    <string name="password_label">Password</string>
+    <string name="sign_in_button">Sign In</string>
+    <string name="select_course_title">Select Course</string>
+    <string name="enrollment_title">Face Enrollment</string>
+    <string name="check_in_title">Check In</string>
+    <string name="history_title">Attendance History</string>
+    <string name="camera_permission_required">Camera permission is required</string>
+    <string name="grant_permission_button">Grant Permission</string>
+    <string name="capture_button">Capture</string>
+    <string name="logout_button">Logout</string>
+    <string name="enroll_face_button">Enroll Face</string>
+    <string name="view_history_button">View History</string>
+</resources>

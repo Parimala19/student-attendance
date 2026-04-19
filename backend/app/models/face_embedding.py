@@ -1,0 +1,24 @@
+import uuid
+from datetime import datetime
+
+import sqlalchemy as sa
+from pgvector.sqlalchemy import Vector
+from sqlalchemy import ForeignKey, String
+from sqlalchemy.dialects.postgresql import UUID
+from sqlalchemy.orm import Mapped, mapped_column, relationship
+
+from app.core.database import Base
+
+
+class FaceEmbedding(Base):
+    __tablename__ = "face_embeddings"
+
+    id: Mapped[uuid.UUID] = mapped_column(UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)
+    student_id: Mapped[uuid.UUID] = mapped_column(
+        UUID(as_uuid=True), ForeignKey("students.id", ondelete="CASCADE"), nullable=False
+    )
+    embedding = mapped_column(Vector(512), nullable=False)
+    capture_angle: Mapped[str | None] = mapped_column(String(20))
+    created_at: Mapped[datetime] = mapped_column(server_default=sa.text("now()"))
+
+    student: Mapped["Student"] = relationship(back_populates="embeddings")  # noqa: F821

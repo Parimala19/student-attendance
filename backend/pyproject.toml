@@ -1,0 +1,43 @@
+[project]
+name = "attendance-backend"
+version = "0.1.0"
+description = "Facial Recognition Student Attendance System - Backend API"
+requires-python = ">=3.13"
+dependencies = [
+    "fastapi==0.115.12",
+    "uvicorn[standard]==0.34.2",
+    "sqlalchemy[asyncio]==2.0.40",
+    "asyncpg==0.30.0",
+    "alembic==1.15.2",
+    "pgvector==0.3.6",
+    "pydantic[email]==2.11.1",
+    "pydantic-settings==2.9.1",
+    "python-jose[cryptography]==3.4.0",
+    "passlib[bcrypt]==1.7.4",
+    "bcrypt<4.0.0",
+    "python-multipart==0.0.20",
+    "redis==6.1.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest==8.3.5",
+    "pytest-asyncio==0.25.3",
+    "httpx==0.28.1",
+    "ruff==0.11.6",
+]
+
+[tool.ruff]
+line-length = 100
+target-version = "py313"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "N", "UP", "B", "SIM", "RUF"]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["tests"]
+markers = [
+    "integration: HTTP tests against a live stack; run with pytest tests/integration",
+]
+addopts = "--ignore=tests/integration"

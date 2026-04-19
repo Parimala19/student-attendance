@@ -1,0 +1,53 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg-info/
+dist/
+build/
+.venv/
+venv/
+env/
+.env
+*.env
+
+# Python test / coverage
+.pytest_cache/
+.coverage
+htmlcov/
+.mypy_cache/
+
+# SQLite (local test DB)
+*.db
+*.sqlite3
+
+# Docker
+.dockerignore
+
+# Android
+android/.gradle/
+android/app/build/
+android/build/
+android/.kotlin/sessions/
+*.jks
+*.keystore
+*.apk
+*.aab
+
+# IDE
+.idea/workspace.xml
+.idea/tasks.xml
+.idea/caches/
+.idea/shelf/
+.idea/sonarlint/
+.vscode/settings.json
+*.iml
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Logs
+*.log
